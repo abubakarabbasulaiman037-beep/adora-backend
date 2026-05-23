@@ -3,7 +3,7 @@ import datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from apscheduler.schedulers.background import BackgroundScheduler
-from .config.config import settings
+from config.config import settings
 from .database.database import engine, Base, SessionLocal
 from .models import models
 from .routes import auth_routes, user_routes, wallet_routes, trade_routes, ws_routes, notification_routes, admin_routes, market_routes
