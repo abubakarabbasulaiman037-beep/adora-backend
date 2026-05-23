@@ -1,7 +1,7 @@
 import uuid
 from sqlalchemy.orm import Session
-from ..models.models import User, Transaction, TransactionType, TransactionStatus, Notification
-from ..websocket.manager import manager
+from models.models import User, Transaction, TransactionType, TransactionStatus, Notification
+from websocket.manager import manager
 
 class WalletService:
     @staticmethod

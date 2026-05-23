@@ -2,7 +2,7 @@ import json
 import logging
 import httpx
 from typing import Optional, Dict, Any
-from ..config.config import settings
+from config.config import settings
 
 logger = logging.getLogger(__name__)
 

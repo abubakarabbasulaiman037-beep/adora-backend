@@ -2,11 +2,11 @@ from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Depends
 from typing import Optional
 from jose import jwt
 from sqlalchemy.orm import Session
-from ..database.database import get_db
-from ..websocket.manager import manager
-from ..config.config import settings
-from ..models.models import User, MarketPrice
-from ..schemas.schemas import MarketPriceResponse
+from database.database import get_db
+from websocket.manager import manager
+from config.config import settings
+from models.models import User, MarketPrice
+from schemas.schemas import MarketPriceResponse
 
 router = APIRouter(tags=["websocket"])
 

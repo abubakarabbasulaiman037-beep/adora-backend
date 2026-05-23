@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from typing import List
-from ..database.database import get_db
-from ..models.models import User, Trade, Transaction, MarketPrice, TradeStatus, TransactionStatus
-from ..schemas.schemas import UserResponse, TradeResponse, TransactionResponse, AdminDashboardStats, MarketControlRequest
-from ..auth.auth_bearer import get_current_admin
-from ..services.wallet_service import wallet_service
+from database.database import get_db
+from models.models import User, Trade, Transaction, MarketPrice, TradeStatus, TransactionStatus
+from schemas.schemas import UserResponse, TradeResponse, TransactionResponse, AdminDashboardStats, MarketControlRequest
+from auth.auth_bearer import get_current_admin
+from services.wallet_service import wallet_service
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 

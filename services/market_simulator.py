@@ -5,10 +5,10 @@ Thin adapter that exposes the same interface as the old MarketSimulator
 but reads LIVE prices from the running DerivClient instead of random numbers.
 """
 
-from .dexscreener_client import dexscreener_client
-from ..config.config import settings
-from ..database.database import SessionLocal
-from ..models.models import MarketPrice
+from services.dexscreener_client import dexscreener_client
+from config.config import settings
+from database.database import SessionLocal
+from models.models import MarketPrice
 
 
 class DerivMarketService:

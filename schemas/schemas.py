@@ -1,7 +1,7 @@
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional, List
 from datetime import datetime
-from ..models.models import TradeStatus, TradeResult, TransactionType, TransactionStatus
+from models.models import TradeStatus, TradeResult, TransactionType, TransactionStatus
 
 # --- Auth Schemas ---
 class Token(BaseModel):

@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 import datetime
 import enum
-from ..database.database import Base
+from database.database import Base
 
 class TradeStatus(str, enum.Enum):
     OPEN = "OPEN"

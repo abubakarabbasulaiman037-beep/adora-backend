@@ -1,13 +1,13 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
-from ..database.database import get_db
-from ..models.models import User, Transaction, TransactionType, TransactionStatus
-from ..schemas.schemas import TransactionCreate, TransactionResponse, PaystackWithdrawRequest
-from ..services.wallet_service import wallet_service
-from ..services.paystack_service import paystack_service
-from ..services.exchange_rate_service import exchange_rate_service
-from ..auth.auth_bearer import get_current_user
+from database.database import get_db
+from models.models import User, Transaction, TransactionType, TransactionStatus
+from schemas.schemas import TransactionCreate, TransactionResponse, PaystackWithdrawRequest
+from services.wallet_service import wallet_service
+from services.paystack_service import paystack_service
+from services.exchange_rate_service import exchange_rate_service
+from auth.auth_bearer import get_current_user
 
 router = APIRouter(prefix="/wallet", tags=["wallet"])
 

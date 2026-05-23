@@ -13,9 +13,9 @@ import random
 from typing import Dict, Optional, Any, List
 
 from sqlalchemy.orm import Session
-from ..config.config import settings
-from ..database.database import SessionLocal
-from ..models.models import MarketPrice, Candle
+from config.config import settings
+from database.database import SessionLocal
+from models.models import MarketPrice, Candle
 
 logger = logging.getLogger(__name__)
 

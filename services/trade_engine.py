@@ -9,11 +9,11 @@ import datetime
 import asyncio
 import logging
 from sqlalchemy.orm import Session
-from ..database.database import SessionLocal
-from ..models.models import User, Trade, TradeStatus, TradeResult, Notification
-from ..config.config import settings
-from ..services.market_simulator import market_simulator
-from ..websocket.manager import manager
+from database.database import SessionLocal
+from models.models import User, Trade, TradeStatus, TradeResult, Notification
+from config.config import settings
+from services.market_simulator import market_simulator
+from websocket.manager import manager
 
 logger = logging.getLogger(__name__)
 

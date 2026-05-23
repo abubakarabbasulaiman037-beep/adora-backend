@@ -3,7 +3,7 @@ from typing import Optional
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel
-from ..config.config import settings
+from config.config import settings
 
 class TokenData(BaseModel):
     username: Optional[str] = None

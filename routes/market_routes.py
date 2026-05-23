@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from ..database.database import get_db
-from ..models.models import Candle, MarketPrice
-from ..schemas.schemas import CandleResponse, MarketPriceResponse
-from ..services.market_simulator import market_simulator
+from database.database import get_db
+from models.models import Candle, MarketPrice
+from schemas.schemas import CandleResponse, MarketPriceResponse
+from services.market_simulator import market_simulator
 
 router = APIRouter(prefix="/market", tags=["market"])
 
