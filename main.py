@@ -4,16 +4,16 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from apscheduler.schedulers.background import BackgroundScheduler
 from config.config import settings
-from .database.database import engine, Base, SessionLocal
-from .models import models
-from .routes import auth_routes, user_routes, wallet_routes, trade_routes, ws_routes, notification_routes, admin_routes, market_routes
-from .services.market_simulator import market_simulator
-from .services.trade_engine import trade_engine
-from .services.dexscreener_client import dexscreener_client
-from .services.deriv_client import deriv_client
-from .auth.auth_handler import get_password_hash
-from .websocket.manager import manager
-from .schemas.schemas import MarketPriceResponse
+from database.database import engine, Base, SessionLocal
+from models import models
+from routes import auth_routes, user_routes, wallet_routes, trade_routes, ws_routes, notification_routes, admin_routes, market_routes
+from services.market_simulator import market_simulator
+from services.trade_engine import trade_engine
+from services.dexscreener_client import dexscreener_client
+from services.deriv_client import deriv_client
+from auth.auth_handler import get_password_hash
+from websocket.manager import manager
+from schemas.schemas import MarketPriceResponse
 import logging
 
 # Setup logging
